@@ -114,3 +114,11 @@ if ! shopt -oq posix; then
 fi
 alias ack=ack-grep
 display-dhammapada | cowsay -f ~/.cows/buddha.cow -W 120 -t
+#git aliases
+#git current branch
+alias git-cb='git rev-parse --abbrev-ref HEAD'
+alias git-pull-cb='git pull origin $(git-cb)'
+alias git-log='git log --oneline --graph --decorate'
+
+#some backgroumd music
+alias mplayer='mplayer -vo null'
