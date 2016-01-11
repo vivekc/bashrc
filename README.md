@@ -11,4 +11,3 @@ cowsay is a utility to render text with ASCII art. (aso see cowthink)
 
 Have added buddha.cow to render Buddha statue ascii art on each quote. Thanks to warrenxfan's [Github Gist] [https://gist.github.com/warrenxfan/0d0634a7b7314ea49355 "Buddha ASCII Art"]
 
-
