@@ -1,0 +1,18 @@
+#!/bin/bash
+
+protected_branch="dev"
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+if [ $protected_branch = $current_branch ]
+then
+    read -p "You are about to push to dev branch. Are you sure?[y/n]" -n 1 -r < /dev/tty
+    echo
+    if echo $REPLY | grep -e '^[Yy]$' > /dev/null
+    then
+        exit 0
+    fi
+    exit 1
+else
+    exit 0
+fi
+
+
